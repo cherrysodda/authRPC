@@ -1,4 +1,4 @@
-module studentgit.kata.academy/cherrysoda/go-kata/course4/microservices/protos
+module github.com/cherrysodda/authRPC
 
 go 1.22.1
 
