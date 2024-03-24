@@ -7,6 +7,15 @@ option go_package = "authservice.v1";
 service Auth{
     rpc Register(RegisterRequest) returns (RegisterResponse);
     rpc Login(LoginRequest)  returns (LoginResponse);
+    rpc ValidateToken(TokenRequest) returns (TokenResponse);
+}
+
+message TokenRequest {
+    string token = 1;
+}
+
+message TokenResponse {
+    bool valid = 1;
 }
 
 message RegisterRequest{
